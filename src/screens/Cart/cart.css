@@ -12,3 +12,21 @@
     font-size: larger;
     font-weight: 400;
 }
+
+.grand-price-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 920px) {
+    .grand-price-div{
+        justify-content: flex-end;
+        margin-right: 6rem;
+    }
+    
+}

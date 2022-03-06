@@ -13,8 +13,8 @@ const CartScreen = () => {
   },[cart])
   return (
     <div className='cart-container'>
-      {  cart.length > 0 ? (cart.map((item,index)=> <CartItem key={index} setGrandTotal={setGrandTotal} cartItem= {item}/>)) : <div className='empty'> No ITEM IN THE CART </div>}
-      {cart.length > 0 && <h1>{grandTotal}</h1>}
+      {cart.length > 0 ? (cart.map((item,index)=> <CartItem key={index} setGrandTotal={setGrandTotal} cartItem= {item}/>)) : <div className='empty'> No ITEM IN THE CART </div>}
+      {cart.length > 0 && <div className='grand-price-div'>TOTAL:   ₹{grandTotal}</div>}
     </div>
   )
 }

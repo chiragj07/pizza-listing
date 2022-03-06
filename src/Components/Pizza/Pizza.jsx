@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Popup from '../Popup/Popup';
 import './pizza.css'
+import Rating from '../Rating/Rating';
 const Pizza = ({pizza}) => {
 const {name, img_url,description,isVeg, rating,price} = pizza
 const [isVisible, setIsVisible] = useState(false);
@@ -21,7 +22,9 @@ return (
       <span>{isVeg ? "VEG" : "NON-VEG"}</span>
     </div>
     <h3>Price : ₹{price}</h3>
-    <h4>{rating}</h4>
+    <div className='rating-div'>
+    <Rating rating ={rating} totalStar={5}/>
+    </div>
     <button onClick={clickHandler}>- ADD +</button>
     <div className='popup-div' style={{display: `${isVisible ? "flex" : "none"}`}}>
       <Popup pizza={pizza} isVisible={isVisible} setIsVisible={setIsVisible} clickHandler={clickHandler} />

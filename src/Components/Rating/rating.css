@@ -1,0 +1,15 @@
+.outer{
+    position: relative;
+    display: inline-block;
+}
+.inner{
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top:0;
+    white-space: nowrap;
+}
+
+.rating-div{
+    margin-bottom: 1rem;
+}

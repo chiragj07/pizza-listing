@@ -9,8 +9,9 @@ const Navbar = () => {
         <div className='title'>
             <Link to={'/'} style={{textDecoration:"none", color:"#ced5d4"}}>
             <span>Pizza Shop</span> 
-            <img src={pizza} alt="pizza icon" />
             </Link>
+            <img src={pizza} alt="pizza icon" />
+
         </div>
         <div className='links'>
             <Link to={'/'} style={{textDecoration:"none", color:"#ced5d4"}}>
