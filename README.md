@@ -1,3 +1,3 @@
-### `cd pizza` fails to minify
-### `npm install` fails to minify
-### `npm start` fails to minify
+### `cd pizza` go to directory
+### `npm install` install dependencies
+### `npm start` start develpoment server
