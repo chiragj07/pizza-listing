@@ -1,0 +1,14 @@
+.cart-container{
+    width: 90%;
+    height: 500px;
+    position: relative;
+    margin: auto;
+}
+
+.empty{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: larger;
+    font-weight: 400;
+}

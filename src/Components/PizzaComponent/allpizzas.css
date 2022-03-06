@@ -1,0 +1,17 @@
+.all-pizzas{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+@media screen and (min-width : 720px) {
+    .all-pizzas{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width : 1080px) {
+    .all-pizzas{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
