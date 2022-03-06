@@ -40,7 +40,7 @@ const PizzaComponent = () => {
     <div className='all-pizzas'>
 
          {
-           loading ? (<div>Loading....</div>): error ==='' ? (pizzas.filter((pizza) => {
+           loading ? (<div className='loader'></div>): error ==='' ? (pizzas.filter((pizza) => {
             return  (filterArg==='' ?pizza : filterArg==="veg" ? pizza.isVeg === true : pizza.isVeg === false)
            }).map((pizza) =><Pizza key= {pizza.id} pizza={pizza} />)) : (<div>{error}</div>)
          }
